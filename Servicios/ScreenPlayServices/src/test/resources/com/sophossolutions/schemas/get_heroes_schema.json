@@ -1,0 +1,52 @@
+
+{
+    "$schema": "JSON",
+    "$id": "JSON-0004",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "heroes"
+    ],
+    "properties": {
+        "heroes": {
+            "type": "array",
+            "default": [],
+            "title": "The heroes Schema",
+            "items": {
+                "type": "object",
+                "title": "A Schema",
+                "required": [
+                    "id",
+                    "name",
+                    "alias",
+                    "superpowers"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "name": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "alias": {
+                        "type": "string"
+                    },
+                    "superpowers": {
+                        "type": [
+                            "null",
+                            "array"
+                        ],
+                        "title": "The superpowers Schema",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

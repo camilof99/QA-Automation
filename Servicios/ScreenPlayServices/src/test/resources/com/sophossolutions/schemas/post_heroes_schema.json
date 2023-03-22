@@ -1,0 +1,33 @@
+
+{
+    "$schema": "JSON",
+    "$id": "JSON-0005",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "id",
+        "name",
+        "alias",
+        "superpowers"
+    ],
+    "properties": {
+        "id": {
+            "type": "integer"
+        },
+        "name": {
+            "type": "string"
+        },
+        "alias": {
+            "type": "string"
+        },
+        "superpowers": {
+            "type": "array",
+            "default": [],
+            "title": "The superpowers Schema",
+            "items": {
+                "type": "string"
+            }
+        }
+    }
+}

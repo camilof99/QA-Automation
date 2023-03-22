@@ -1,0 +1,64 @@
+
+{
+   	"$id":"schema_001",
+ 	"$schema":"JSON",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "id",
+        "name",
+        "email",
+        "gender",
+        "status"
+    ],
+    "properties": {
+        "id": {
+            "type": "integer",
+            "default": 0,
+            "title": "The id Schema",
+            "examples": [
+                1012606
+            ]
+        },
+        "name": {
+            "type": "string",
+            "default": "",
+            "title": "The name Schema",
+            "examples": [
+                "Charvi Gandhi CPA"
+            ]
+        },
+        "email": {
+            "type": "string",
+            "default": "",
+            "title": "The email Schema",
+            "examples": [
+                "cpa_charvi_gandhi@turner-bauch.biz"
+            ]
+        },
+        "gender": {
+            "type": "string",
+            "default": "",
+            "title": "The gender Schema",
+            "examples": [
+                "male"
+            ]
+        },
+        "status": {
+            "type": "string",
+            "default": "",
+            "title": "The status Schema",
+            "examples": [
+                "active"
+            ]
+        }
+    },
+    "examples": [{
+        "id": 1012606,
+        "name": "Charvi Gandhi CPA",
+        "email": "cpa_charvi_gandhi@turner-bauch.biz",
+        "gender": "male",
+        "status": "active"
+    }]
+}

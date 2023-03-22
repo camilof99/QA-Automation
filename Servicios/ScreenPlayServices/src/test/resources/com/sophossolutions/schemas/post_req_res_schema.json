@@ -1,0 +1,54 @@
+
+{
+    "$schema": "JSON",
+    "$id": "schema_003",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "name",
+        "job",
+        "id",
+        "createdAt"
+    ],
+    "properties": {
+        "name": {
+            "type": "string",
+            "default": "",
+            "title": "The name Schema",
+            "examples": [
+                "James Bond"
+            ]
+        },
+        "job": {
+            "type": "string",
+            "default": "",
+            "title": "The job Schema",
+            "examples": [
+                "leader"
+            ]
+        },
+        "id": {
+            "type": "string",
+            "default": "",
+            "title": "The id Schema",
+            "examples": [
+                "60"
+            ]
+        },
+        "createdAt": {
+            "type": "string",
+            "default": "",
+            "title": "The createdAt Schema",
+            "examples": [
+                "2023-03-14T00:14:53.482Z"
+            ]
+        }
+    },
+    "examples": [{
+        "name": "James Bond",
+        "job": "leader",
+        "id": "60",
+        "createdAt": "2023-03-14T00:14:53.482Z"
+    }]
+}
